@@ -1,0 +1,150 @@
+.content{
+    width:80%;
+	margin: .6rem auto;
+    border-radius: .1rem;
+    
+    .blank{
+		height: .2rem;
+	    overflow: hidden;
+	    width: 100%;
+	    margin: auto;
+	    clear: both;
+	}
+	.hometitle {
+	    padding: 0 .2rem;
+	    line-height: .5rem;
+	    height: .5rem;
+	    font-size: .24rem;
+	    border-bottom: #000 2px solid;
+	    position: relative;
+	    background: #fff;
+	}
+	.desc{
+		background: #fff;
+    	overflow: hidden;
+	    width: 100%;
+	    clear: both;
+	    border-radius: .1rem;
+	    padding: 10px 20px;
+	}
+	.block{
+
+		border-radius: .1rem;
+		float:left;
+		width: 47.4%;
+		background: #fff;
+		margin-bottom:.5rem;
+		.title{
+			margin:.2rem;
+			.title_left{
+				overflow: hidden;
+			    width: 30%;
+			    max-height: 1rem;
+			    display: block;
+			    float: left;
+			    margin-right: .2rem;
+			    border-radius: .05rem;
+			    img{
+			    	width:100%;
+			    	height:auto;
+			    }
+			}
+			.title_right::before{
+				clear:both;
+			}
+			.title_right{
+				float:left;
+				width:66%;
+				.name{
+					span{
+						background:#d21a1a;
+						color: #fff;
+						float:left;
+						border-radius:.03rem;
+						padding: .01rem .1rem;
+						 position:relative;
+						 margin-right:.2rem;
+					}
+					span::before{
+						display:block;
+					    content:'';
+					    border-width:.11rem .11rem .11rem .11rem;
+					    border-style:solid;
+					    border-color: transparent transparent transparent #d21a1a;
+					    
+					    /* 定位 */
+					    position:absolute;
+					    right:-21px;
+					    top:0;
+					}
+				}
+				.title_desc{
+					margin-top: .11rem;
+				}
+			}
+		}
+		.table{
+			tr{
+				border-bottom: 1px solid #EBEEF5;
+				color: #606266;
+				font-size: .14rem;
+				th{
+					padding: .1rem
+				}
+				td{
+					@extend th;
+					.url{
+						display: none;
+					}
+					.lyric{
+						@extend .url;
+					}
+					a:hover{
+						background: transparent;
+						text-decoration: none;
+					}
+					span{
+						cursor:pointer;
+					}
+				}
+			}
+			.head{
+				color: #909399;
+			}
+		}
+	}
+	.block:nth-of-type(even){
+		margin-left: .6rem;
+	}
+	.music{
+		position:fixed;
+		bottom: -93px;
+		transition: all 0.6s ease;
+		.lock{
+			width:.18rem;
+			height:.18rem;
+			position: absolute;
+			right: 10px;
+			bottom: 100px;
+			cursor:pointer;
+			img{
+				width:100%;
+				height:auto;
+			}
+			.img2{
+				display:none;
+			}
+			// background: url(../images/lock.png) no-repeat;
+			// background-size: 100%;
+		}
+		.aplayer{
+		
+    	width: 1266px;
+    	}
+
+	}
+	.music:hover{
+		bottom: 1px;
+	}
+	
+}

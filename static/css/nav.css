@@ -1,0 +1,78 @@
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  font: 15px "Microsoft YaHei", Arial, Helvetica, sans-serif;
+  color: #555;
+  background: #f1f1f1; }
+
+@font-face {
+  font-family: DryBrush;
+  src: url(../fonts/DryBrush.ttf); }
+.navbar-fixed-top {
+  background: #333; }
+  .navbar-fixed-top .navbar-brand {
+    font-family: 'DryBrush';
+    text-transform: uppercase;
+    font-size: .3rem;
+    line-height: .26rem;
+    color: #9d9d9d; }
+  .navbar-fixed-top .nav-right {
+    float: right;
+    height: .5rem;
+    line-height: .5rem;
+    margin: 0; }
+    .navbar-fixed-top .nav-right li {
+      display: inline-block;
+      width: 1rem;
+      text-align: center; }
+      .navbar-fixed-top .nav-right li a {
+        color: #999;
+        display: inline-block;
+        width: 100%;
+        height: 100%; }
+      .navbar-fixed-top .nav-right li a:hover {
+        color: #ff9600;
+        background: transparent;
+        text-decoration: none; }
+      .navbar-fixed-top .nav-right li .cur {
+        color: #ff9600;
+        background: transparent;
+        text-decoration: none; }
+      .navbar-fixed-top .nav-right li span img {
+        width: .5rem;
+        height: auto;
+        border-radius: 50%; }
+    .navbar-fixed-top .nav-right .select {
+      position: relative;
+      transition: all .5s ease; }
+      .navbar-fixed-top .nav-right .select .sub {
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        top: 50px;
+        background: #1C2327;
+        transition: all .5s ease;
+        display: none;
+        z-index: 9; }
+        .navbar-fixed-top .nav-right .select .sub li {
+          height: 30px;
+          line-height: 30px;
+          font-size: 14px;
+          margin-right: 0; }
+    .navbar-fixed-top .nav-right .select::before {
+      position: absolute;
+      content: "";
+      top: 22px;
+      right: 7px;
+      background: url(../images/jt.png) no-repeat;
+      width: 8px;
+      height: 8px;
+      transition: all .5s ease; }
+    .navbar-fixed-top .nav-right .select:hover:before {
+      transform: rotate(180deg); }
+    .navbar-fixed-top .nav-right .select:hover ul.sub {
+      display: block; }
+
+/*# sourceMappingURL=nav.css.map */

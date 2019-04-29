@@ -1,0 +1,36 @@
+.content{
+	width:80%;
+	margin: .6rem auto;
+	
+	padding: .1rem;
+	.blank{
+		height: .2rem;
+	    overflow: hidden;
+	    width: 100%;
+	    margin: auto;
+	    clear: both;
+	}
+	.title{
+		text-align:center;
+		margin-bottom: .5rem;
+	}
+	ul{
+		li{
+			padding: .1rem;
+			border-radius: .1rem;
+			float:left;
+			width: 47.4%;
+			background: #fff;
+			margin-bottom:.5rem;
+			.img{
+				img{
+					width:100%;
+					height:auto;
+				}
+			}
+		}
+		li:nth-of-type(even){
+			margin-left: .6rem;
+		}
+	}
+}

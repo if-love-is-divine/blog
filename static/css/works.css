@@ -1,0 +1,27 @@
+.content {
+  width: 80%;
+  margin: .6rem auto;
+  padding: .1rem; }
+  .content .blank {
+    height: .2rem;
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    clear: both; }
+  .content .title {
+    text-align: center;
+    margin-bottom: .5rem; }
+  .content ul li {
+    padding: .1rem;
+    border-radius: .1rem;
+    float: left;
+    width: 47.4%;
+    background: #fff;
+    margin-bottom: .5rem; }
+    .content ul li .img img {
+      width: 100%;
+      height: auto; }
+  .content ul li:nth-of-type(even) {
+    margin-left: .6rem; }
+
+/*# sourceMappingURL=works.css.map */

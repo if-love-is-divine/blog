@@ -1,0 +1,48 @@
+.content{
+	width:70%;
+	margin: .6rem auto;
+    border-radius: .1rem;
+    background: #fff;
+    padding: 1px 20px;
+    .title{
+    	border-bottom: 2px solid #ccc;
+    	line-height: 70px;
+    }
+    h3{
+    	border-bottom: 1px solid #ccc;
+    	line-height:.4rem;
+    	font-size: .16rem;
+    }
+    ul{
+    	li{
+    		border-bottom:1px solid #ccc;
+    		padding-top:.2rem;
+    		.img{
+    			width: 1rem;
+    			height: 1rem;
+    			float:left;
+    			margin-right:.3rem;
+    			img{
+    				width:100%;
+    				height:auto;
+    			}
+    		}
+    		.li_right{
+    			p{
+    				.name{
+    					color:#ade3ff;
+    				}
+    			}
+    			.txt{
+    				height:1rem;
+    			}
+    			.time{
+				    border-bottom: 1px solid #ccc;
+				    margin-left: 1.3rem;
+				    line-height: .4rem;
+				    margin-bottom: .2rem;
+    			}
+    		}
+    	}
+    }
+}

@@ -1,0 +1,194 @@
+.content {
+  width: 80%;
+  margin: .6rem auto; }
+  .content .blank {
+    height: .2rem;
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    clear: both; }
+  .content .leftbox {
+    width: 70%;
+    float: left;
+    overflow: hidden; }
+    .content .leftbox .hometitle {
+      padding: 0 .1rem;
+      line-height: .4rem;
+      height: .4rem;
+      font-size: .18rem;
+      border-bottom: #000 .02rem solid;
+      position: relative;
+      font-weight: bold; }
+    .content .leftbox .newblogs {
+      background: #fff;
+      overflow: hidden;
+      width: 100%;
+      clear: both;
+      border-radius: .1rem;
+      margin: .2rem 0; }
+      .content .leftbox .newblogs ul {
+        padding: .1rem;
+        overflow: hidden; }
+        .content .leftbox .newblogs ul li {
+          border-bottom: #ccc 1px solid;
+          margin-bottom: .1rem;
+          overflow: hidden; }
+          .content .leftbox .newblogs ul li .blogtitle {
+            line-height: .3rem;
+            margin: .1rem 0; }
+            .content .leftbox .newblogs ul li .blogtitle a {
+              text-decoration: none;
+              color: #555;
+              font-weight: bold; }
+          .content .leftbox .newblogs ul li .bloginfo .blogpic {
+            overflow: hidden;
+            width: 30%;
+            max-height: 1rem;
+            display: block;
+            float: left;
+            margin-right: .2rem;
+            border-radius: .05rem; }
+            .content .leftbox .newblogs ul li .bloginfo .blogpic img {
+              width: 100%; }
+          .content .leftbox .newblogs ul li .bloginfo p {
+            color: #888;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            padding-top: .1rem;
+            font-size: .14rem; }
+          .content .leftbox .newblogs ul li .autor {
+            width: 100%;
+            overflow: hidden;
+            clear: both;
+            margin: .2rem 0 0 0;
+            display: inline-block;
+            color: #838383;
+            font-size: .12rem; }
+            .content .leftbox .newblogs ul li .autor a {
+              color: #096; }
+            .content .leftbox .newblogs ul li .autor span {
+              margin: 0 .1rem 0 0;
+              padding-left: .2rem; }
+            .content .leftbox .newblogs ul li .autor .lm {
+              background: url(../images/newsbg01.png) no-repeat left center; }
+            .content .leftbox .newblogs ul li .autor .f_l {
+              float: left; }
+            .content .leftbox .newblogs ul li .autor .dtime {
+              background: url(../images/newsbg02.png) no-repeat left center; }
+            .content .leftbox .newblogs ul li .autor .viewnum {
+              background: url(../images/newsbg04.png) no-repeat left center; }
+            .content .leftbox .newblogs ul li .autor .pingl {
+              background: url(../images/like.jpg) no-repeat left center; }
+            .content .leftbox .newblogs ul li .autor .f_r {
+              float: right; }
+              .content .leftbox .newblogs ul li .autor .f_r .more {
+                font-size: .14rem; }
+  .content .rightbox {
+    width: 28%;
+    float: right;
+    overflow: hidden; }
+    .content .rightbox .ab_title {
+      text-align: center;
+      position: relative;
+      margin: .2rem;
+      margin-top: 0.36rem; }
+    .content .rightbox .ab_title::before {
+      content: "";
+      width: 25%;
+      height: .02rem;
+      background: #000;
+      position: absolute;
+      left: 0;
+      bottom: .08rem; }
+    .content .rightbox .ab_title:after {
+      content: "";
+      width: 25%;
+      height: .02rem;
+      background: #000;
+      position: absolute;
+      right: 0;
+      bottom: .08rem; }
+    .content .rightbox .search {
+      background: #FFF;
+      border-radius: .1rem;
+      overflow: hidden;
+      padding: .2rem; }
+      .content .rightbox .search form .input_text {
+        padding-left: .05rem;
+        border: 1px solid #ccc;
+        width: 70%;
+        height: .29rem;
+        line-height: .26rem;
+        background-color: #f2f2f2;
+        float: left;
+        border-radius: .05rem 0 0 .05rem;
+        outline: none; }
+      .content .rightbox .search form .input_submit {
+        background-color: #333;
+        color: #FFF;
+        float: left;
+        width: 20%;
+        border: none;
+        cursor: pointer;
+        height: .28rem;
+        line-height: 28px;
+        border-radius: 0 .05rem .05rem 0;
+        outline: none; }
+
+.rightbox .paihang {
+  background: #FFF;
+  border-radius: .1rem;
+  overflow: hidden;
+  margin: .2rem 0; }
+  .rightbox .paihang ul {
+    padding: .1rem; }
+    .rightbox .paihang ul li {
+      border-bottom: solid 1px #EAEAEA;
+      font-size: .14rem;
+      margin: 0 0 .1rem 0;
+      padding: 0 0 .1rem 0;
+      overflow: hidden;
+      transition: all 1s ease; }
+      .rightbox .paihang ul li b {
+        height: .3rem;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        display: block; }
+      .rightbox .paihang ul li p {
+        line-height: .24rem;
+        color: #888; }
+        .rightbox .paihang ul li p i {
+          width: 1rem;
+          height: .9rem;
+          overflow: hidden;
+          display: block;
+          border: #efefef 1px solid;
+          float: left;
+          margin-right: .1rem; }
+          .rightbox .paihang ul li p i a img {
+            height: 100%;
+            margin: auto;
+            -webkit-transition: all .5s ease;
+            transition: all .5s ease; }
+        .rightbox .paihang ul li p span {
+          color: #999;
+          display: inline-block;
+          overflow: hidden;
+          display: -webkit-box;
+          text-overflow: ellipsis;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3;
+          font-size: .14rem;
+          transition: all 1s ease; }
+    .rightbox .paihang ul li:hover {
+      border-bottom: #000 1px solid; }
+    .rightbox .paihang ul li:hover span {
+      color: #000; }
+    .rightbox .paihang ul li:hover img {
+      transform: scale(1.05); }
+
+/*# sourceMappingURL=diary.css.map */

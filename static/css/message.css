@@ -1,0 +1,35 @@
+.content {
+  width: 70%;
+  margin: .6rem auto;
+  border-radius: .1rem;
+  background: #fff;
+  padding: 1px 20px; }
+  .content .title {
+    border-bottom: 2px solid #ccc;
+    line-height: 70px; }
+  .content h3 {
+    border-bottom: 1px solid #ccc;
+    line-height: .4rem;
+    font-size: .16rem; }
+  .content ul li {
+    border-bottom: 1px solid #ccc;
+    padding-top: .2rem; }
+    .content ul li .img {
+      width: 1rem;
+      height: 1rem;
+      float: left;
+      margin-right: .3rem; }
+      .content ul li .img img {
+        width: 100%;
+        height: auto; }
+    .content ul li .li_right p .name {
+      color: #ade3ff; }
+    .content ul li .li_right .txt {
+      height: 1rem; }
+    .content ul li .li_right .time {
+      border-bottom: 1px solid #ccc;
+      margin-left: 1.3rem;
+      line-height: .4rem;
+      margin-bottom: .2rem; }
+
+/*# sourceMappingURL=message.css.map */

@@ -1,0 +1,433 @@
+.content {
+  width: 80%;
+  margin: .6rem auto; }
+  .content .blank {
+    height: .2rem;
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    clear: both; }
+  .content .leftbox {
+    width: 70%;
+    float: left;
+    overflow: hidden; }
+    .content .leftbox .hometitle {
+      padding: 0 .1rem;
+      line-height: .4rem;
+      height: .4rem;
+      font-size: .18rem;
+      border-bottom: #000 .02rem solid;
+      position: relative;
+      font-weight: bold; }
+    .content .leftbox .newblogs {
+      background: #fff;
+      overflow: hidden;
+      width: 100%;
+      clear: both;
+      border-radius: .1rem;
+      margin: .2rem 0; }
+      .content .leftbox .newblogs ul {
+        padding: .1rem;
+        overflow: hidden; }
+        .content .leftbox .newblogs ul li {
+          border-bottom: #ccc 1px solid;
+          margin-bottom: .1rem;
+          overflow: hidden; }
+          .content .leftbox .newblogs ul li .blogtitle {
+            line-height: .3rem;
+            margin: .1rem 0; }
+            .content .leftbox .newblogs ul li .blogtitle a {
+              text-decoration: none;
+              color: #555;
+              font-weight: bold; }
+          .content .leftbox .newblogs ul li .bloginfo .blogpic {
+            overflow: hidden;
+            width: 30%;
+            max-height: 1rem;
+            display: block;
+            float: left;
+            margin-right: .2rem;
+            border-radius: .05rem; }
+            .content .leftbox .newblogs ul li .bloginfo .blogpic img {
+              width: 100%; }
+          .content .leftbox .newblogs ul li .bloginfo p {
+            color: #888;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            padding-top: .1rem;
+            font-size: .14rem; }
+          .content .leftbox .newblogs ul li .autor {
+            width: 100%;
+            overflow: hidden;
+            clear: both;
+            margin: .2rem 0 0 0;
+            display: inline-block;
+            color: #838383;
+            font-size: .12rem; }
+            .content .leftbox .newblogs ul li .autor a {
+              color: #096; }
+            .content .leftbox .newblogs ul li .autor span {
+              margin: 0 .1rem 0 0;
+              padding-left: .2rem; }
+            .content .leftbox .newblogs ul li .autor .lm {
+              background: url(../images/newsbg01.png) no-repeat left center; }
+            .content .leftbox .newblogs ul li .autor .f_l {
+              float: left; }
+            .content .leftbox .newblogs ul li .autor .dtime {
+              background: url(../images/newsbg02.png) no-repeat left center; }
+            .content .leftbox .newblogs ul li .autor .viewnum {
+              background: url(../images/newsbg04.png) no-repeat left center; }
+            .content .leftbox .newblogs ul li .autor .pingl {
+              background: url(../images/like.jpg) no-repeat left center; }
+            .content .leftbox .newblogs ul li .autor .f_r {
+              float: right; }
+              .content .leftbox .newblogs ul li .autor .f_r .more {
+                font-size: .14rem; }
+  .content .rightbox {
+    width: 28%;
+    float: right;
+    overflow: hidden; }
+    .content .rightbox .ab_title {
+      text-align: center;
+      position: relative;
+      margin: .2rem;
+      margin-top: 0.36rem; }
+    .content .rightbox .ab_title::before {
+      content: "";
+      width: 25%;
+      height: .02rem;
+      background: #000;
+      position: absolute;
+      left: 0;
+      bottom: .08rem; }
+    .content .rightbox .ab_title:after {
+      content: "";
+      width: 25%;
+      height: .02rem;
+      background: #000;
+      position: absolute;
+      right: 0;
+      bottom: .08rem; }
+    .content .rightbox .search {
+      background: #FFF;
+      border-radius: .1rem;
+      overflow: hidden;
+      padding: .2rem; }
+      .content .rightbox .search form .input_text {
+        padding-left: .05rem;
+        border: 1px solid #ccc;
+        width: 70%;
+        height: .29rem;
+        line-height: .26rem;
+        background-color: #f2f2f2;
+        float: left;
+        border-radius: .05rem 0 0 .05rem;
+        outline: none; }
+      .content .rightbox .search form .input_submit {
+        background-color: #333;
+        color: #FFF;
+        float: left;
+        width: 20%;
+        border: none;
+        cursor: pointer;
+        height: .28rem;
+        line-height: 28px;
+        border-radius: 0 .05rem .05rem 0;
+        outline: none; }
+
+.content .leftbox {
+  width: 70%;
+  float: left;
+  overflow: hidden; }
+  .content .leftbox .hometitle {
+    padding: 0 .1rem;
+    line-height: .4rem;
+    height: .4rem;
+    font-size: .18rem;
+    border-bottom: #000 .02rem solid;
+    position: relative;
+    font-weight: bold; }
+  .content .leftbox .header .head_lbt {
+    width: 63%;
+    float: left; }
+    .content .leftbox .header .head_lbt img {
+      width: 100%;
+      height: 2.6rem; }
+  .content .leftbox .header .head_art {
+    float: right;
+    width: 35%;
+    overflow: hidden; }
+    .content .leftbox .header .head_art ul {
+      height: 2.6rem; }
+      .content .leftbox .header .head_art ul li {
+        width: 100%;
+        background: #000;
+        overflow: hidden;
+        height: 1.25rem;
+        margin-bottom: .1rem;
+        border-radius: 3px;
+        position: relative; }
+        .content .leftbox .header .head_art ul li a {
+          display: block;
+          overflow: hidden;
+          height: 100%; }
+          .content .leftbox .header .head_art ul li a img {
+            width: 100%;
+            height: 100%;
+            transition: all 0.5s;
+            opacity: .7; }
+          .content .leftbox .header .head_art ul li a span {
+            bottom: 0;
+            position: absolute;
+            top: 30%;
+            left: 0;
+            right: 0;
+            color: #FFF;
+            text-align: center;
+            font-size: 15px;
+            margin-top: 5px;
+            padding: 0 40px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-height: 24px;
+            height: 48px; }
+  .content .leftbox .header .head_art ul li:hover img {
+    transform: scale(1.1);
+    opacity: 1; }
+  .content .leftbox .Recommend {
+    background: #fff;
+    overflow: hidden;
+    width: 100%;
+    clear: both;
+    border-radius: .1rem; }
+    .content .leftbox .Recommend ul {
+      overflow: hidden;
+      padding: .2rem .1rem;
+      position: relative; }
+      .content .leftbox .Recommend ul li {
+        float: left;
+        width: 32.6%;
+        border-bottom: #ccc 1px solid;
+        border-left: #ccc 1px solid;
+        overflow: hidden;
+        padding: .2rem;
+        -moz-transition: all .5s ease;
+        -webkit-transition: all .5s ease;
+        transition: all .5s ease; }
+        .content .leftbox .Recommend ul li .tpic {
+          width: 100%;
+          height: 1rem;
+          overflow: hidden;
+          border-radius: .1rem;
+          background: #CCC; }
+          .content .leftbox .Recommend ul li .tpic img {
+            display: inline-block;
+            width: 100%;
+            min-height: 100%;
+            height: auto;
+            vertical-align: middle;
+            transition: all .5s ease .1s; }
+        .content .leftbox .Recommend ul li b {
+          display: block;
+          width: 100%;
+          overflow: hidden;
+          height: .3rem;
+          line-height: .3rem;
+          margin: .1rem 0;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden; }
+        .content .leftbox .Recommend ul li span {
+          color: #999;
+          display: inline-block;
+          overflow: hidden;
+          display: -webkit-box;
+          text-overflow: ellipsis;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3;
+          font-size: .14rem; }
+        .content .leftbox .Recommend ul li a {
+          margin: .1rem 0 0 0;
+          color: #096;
+          display: block; }
+        .content .leftbox .Recommend ul li a::before {
+          content: "+";
+          color: #063; }
+      .content .leftbox .Recommend ul li:hover {
+        background: #fff;
+        box-shadow: #ccc 1px 1px .08rem; }
+      .content .leftbox .Recommend ul li:hover img {
+        transform: scale(1.05); }
+    .content .leftbox .Recommend ul::before {
+      content: "";
+      position: absolute;
+      background: #fff;
+      width: 1px;
+      height: 100%;
+      left: .1rem; }
+  .content .leftbox .latest_photos {
+    background: #fff;
+    overflow: hidden;
+    width: 100%;
+    clear: both;
+    border-radius: .1rem;
+    margin: .2rem 0;
+    padding: 0 .4rem; }
+.content .rightbox .aboutme {
+  background: #FFF;
+  border-radius: .1rem;
+  overflow: hidden; }
+  .content .rightbox .aboutme .avatar {
+    width: 1rem;
+    height: 1rem;
+    overflow: hidden;
+    border-radius: .5rem;
+    margin: auto; }
+    .content .rightbox .aboutme .avatar img {
+      width: 100%;
+      height: 100%; }
+  .content .rightbox .aboutme .av_con {
+    line-height: .3rem;
+    padding: .1rem; }
+    .content .rightbox .aboutme .av_con p {
+      background: #f6f6f6;
+      margin: .05rem 0;
+      padding-left: .1rem;
+      border-radius: .05rem;
+      text-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px; }
+.content .rightbox .ranking {
+  background: #FFF;
+  border-radius: .1rem;
+  overflow: hidden;
+  margin: .2rem 0; }
+  .content .rightbox .ranking ul li {
+    height: 30px;
+    line-height: 30px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: .2rem 0;
+    padding-left: .3rem;
+    font-size: .16rem; }
+    .content .rightbox .ranking ul li span {
+      display: inline-block;
+      width: .16rem;
+      height: .16rem;
+      font-size: .12rem;
+      background: #B1B1B1;
+      text-align: center;
+      line-height: .16rem;
+      color: #fff; }
+    .content .rightbox .ranking ul li .red {
+      background: red; }
+    .content .rightbox .ranking ul li a {
+      color: #333;
+      font-size: 0.14rem; }
+    .content .rightbox .ranking ul li a:hover {
+      text-decoration: none; }
+.content .rightbox .song_sheet {
+  background: #FFF;
+  border-radius: .1rem;
+  overflow: hidden;
+  margin: .2rem 0; }
+  .content .rightbox .song_sheet ul .song {
+    margin: .2rem 0;
+    padding: 0 .2rem;
+    font-size: .16rem; }
+    .content .rightbox .song_sheet ul .song span {
+      margin: 0 .1rem; }
+    .content .rightbox .song_sheet ul .song .index {
+      color: #fe2c62;
+      font-weight: 400; }
+.content .rightbox .recent_works {
+  background: #FFF;
+  border-radius: .1rem;
+  overflow: hidden;
+  margin: .2rem 0; }
+  .content .rightbox .recent_works ul {
+    padding: .1rem; }
+    .content .rightbox .recent_works ul li {
+      border-bottom: solid 1px #EAEAEA;
+      font-size: .14rem;
+      margin: 0 0 .1rem 0;
+      padding: 0 0 .1rem 0;
+      overflow: hidden;
+      transition: all 1s ease; }
+      .content .rightbox .recent_works ul li b {
+        height: .3rem;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        display: block; }
+      .content .rightbox .recent_works ul li p {
+        line-height: .24rem;
+        color: #888; }
+        .content .rightbox .recent_works ul li p i {
+          width: 1rem;
+          height: .9rem;
+          overflow: hidden;
+          display: block;
+          border: #efefef 1px solid;
+          float: left;
+          margin-right: .1rem; }
+          .content .rightbox .recent_works ul li p i a img {
+            height: 100%;
+            margin: auto;
+            -webkit-transition: all .5s ease;
+            transition: all .5s ease; }
+        .content .rightbox .recent_works ul li p span {
+          color: #999;
+          display: inline-block;
+          overflow: hidden;
+          display: -webkit-box;
+          text-overflow: ellipsis;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3;
+          font-size: .14rem;
+          transition: all 1s ease; }
+    .content .rightbox .recent_works ul li:hover {
+      border-bottom: #000 1px solid; }
+    .content .rightbox .recent_works ul li:hover span {
+      color: #000; }
+    .content .rightbox .recent_works ul li:hover img {
+      transform: scale(1.05); }
+
+#gallery-wrapper {
+  position: relative;
+  max-width: 75%;
+  width: 75%;
+  margin: 50px auto; }
+
+img.thumb {
+  width: 100%;
+  max-width: 100%;
+  height: auto; }
+
+.white-panel {
+  position: absolute;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  padding: 10px; }
+
+.white-panel h1 {
+  font-size: 1em; }
+
+.white-panel h1 a {
+  color: #A92733; }
+
+.white-panel:hover {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  margin-top: -5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+/*# sourceMappingURL=index.css.map */
