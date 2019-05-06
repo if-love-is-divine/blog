@@ -13,6 +13,9 @@ const mutations = {
 		state.nav = data;
 		state.footer = data;
 	},
+	muFooter(state,data){
+		state.footer = data;
+	},
 	muAlbum(state,data){
 		state.acate = data;
 	}
@@ -24,6 +27,9 @@ const actions = {
 	},
 	acHide ({commit,state}){
 		commit('muCommon',false)
+	},
+	acFooter ({commit,state},data){
+		commit('muFooter',data);
 	},
 	acAlbum ({commit,state},data){
 		axios.get(`${root}api/nav.php?action=${data.action}&parent=${data.parent}`).then((res) => {

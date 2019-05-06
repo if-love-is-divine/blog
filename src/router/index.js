@@ -55,7 +55,7 @@ export default new Router({
       component: PersonalData
     },
     {
-      path: '/AlbumDetail',
+      path: '/AlbumDetail/:id',
       name: 'AlbumDetail',
       component: AlbumDetail,
       props: true

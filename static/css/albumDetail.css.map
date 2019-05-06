@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,QAAQ;EACP,MAAM,EAAE,UAAU;EAClB,KAAK,EAAE,GAAG;EACV,WAAE;IACD,UAAU,EAAC,MAAM",
+"mappings": "AAAA,QAAQ;EACP,MAAM,EAAE,UAAU;EAClB,KAAK,EAAE,IAAI;EACX,MAAM,EAAC,KAAK;EACZ,WAAE;IACD,UAAU,EAAC,MAAM",
 "sources": ["../scss/albumDetail.scss"],
 "names": [],
 "file": "albumDetail.css"

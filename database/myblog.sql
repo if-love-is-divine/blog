@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2019 年 04 月 29 日 09:18
+-- 生成日期: 
 -- 服务器版本: 5.5.53
--- PHP 版本: 5.4.45
+-- PHP 版本: 7.0.12
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -644,7 +644,7 @@ CREATE TABLE IF NOT EXISTS `m_admin` (
   `a_name` varchar(255) COLLATE utf8mb4_esperanto_ci NOT NULL COMMENT '名称',
   `a_power` int(1) unsigned NOT NULL COMMENT '权限',
   PRIMARY KEY (`a_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_esperanto_ci COMMENT='用户表' AUTO_INCREMENT=3 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_esperanto_ci COMMENT='用户表' AUTO_INCREMENT=4 ;
 
 --
 -- 转存表中的数据 `m_admin`
@@ -652,7 +652,8 @@ CREATE TABLE IF NOT EXISTS `m_admin` (
 
 INSERT INTO `m_admin` (`a_id`, `a_username`, `a_password`, `a_age`, `a_sex`, `a_name`, `a_power`) VALUES
 (1, 'if love is divine', 'tan826246.', 19, 1, '谭斌', 3),
-(2, 'admin', '123456', 11, 1, '33', 0);
+(2, 'admin', '123456', 11, 1, '33', 0),
+(3, 'tanbin', 'f6508f202edc25fccd5edd56a230ed98', 18, 1, '谭斌', 3);
 
 -- --------------------------------------------------------
 
@@ -723,21 +724,16 @@ INSERT INTO `m_album` (`a_id`, `a_url`, `a_jurisdiction`, `create_time`) VALUES
 (151, 'static/images/picture/511269081.jpg', 0, 1556181174),
 (150, 'static/images/picture/480718245.jpg', 0, 1556267574),
 (149, 'static/images/picture/429898791.jpg', 0, 1556181174),
-(148, 'static/images/picture/312187897.jpg', 0, 1556181174),
 (147, 'static/images/picture/299705924.jpg', 0, 1556181174),
 (146, 'static/images/picture/418228684.jpg', 0, 1556181174),
 (145, 'static/images/picture/427584032.jpg', 0, 1556181174),
 (144, 'static/images/picture/362004208.jpg', 0, 1556181174),
 (143, 'static/images/picture/295832472.jpg', 0, 1556181174),
-(142, 'static/images/picture/292038814.jpg', 0, 1556181174),
 (141, 'static/images/picture/172678293.jpg', 0, 1556181174),
 (140, 'static/images/picture/278437939.jpg', 0, 1556181174),
 (139, 'static/images/picture/263175047.jpg', 0, 1556181174),
 (138, 'static/images/picture/064762106.jpg', 0, 1556181174),
-(137, 'static/images/picture/081992091.jpg', 0, 1556181174),
-(136, 'static/images/picture/148603542.jpg', 0, 1556181174),
 (135, 'static/images/picture/019673376.jpg', 0, 1556181174),
-(134, 'static/images/picture/115221050.jpg', 0, 1556181174),
 (133, 'static/images/picture/119611787.jpg', 0, 1556181174),
 (131, 'static/images/picture/027476826.jpg', 0, 1556181174),
 (132, 'static/images/picture/180806138.jpg', 0, 1556181174),

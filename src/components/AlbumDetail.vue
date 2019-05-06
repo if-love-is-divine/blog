@@ -1,8 +1,10 @@
 <template>
-	<div class="content">
-		<h2>猫</h2>
+	<div class="content" style="width:100%;">
+		<h2>{{name}}</h2>
 		<div class="imgs">
-			<vue-waterfall-easy :imgsArr="imgsArr" @scrollReachBottom="getData" :height="1000" :maxCols="9" :width="800"></vue-waterfall-easy>
+			<vue-waterfall-easy :imgsArr="imgsArr" @scrollReachBottom="getData" :height="1200" :maxCols="5">
+				<div slot="loading" v-if="isFirstLoad">loading...</div>
+			</vue-waterfall-easy>
 		</div>
 	</div>
 </template>
@@ -21,11 +23,13 @@
 			return {
 				imgsArr: [],
 				group: 0,
+				isFirstLoad: true,
+				name: '',
 			}
 		},
 		created(){
-			console.log(this.$props.id)
 			this.getData()
+			this.$store.dispatch('common/acFooter', false);
 		},
 		components:{
 			vueWaterfallEasy
@@ -34,20 +38,26 @@
 			getData(){
 				var group = this.group;
 				var id = this.$props.id;
-				console.log(id)
+
 				axios.get(`${root}api/albumdetail.php?group=${group}&id=${id}`).then(res =>{
 					var data = res.data.data;
-					var img = [];
-					for(var x = 0; x < data.length; x++){
+					console.log(res.data.msg[0].acy_name)
+					if(data != ''){
+						var img = [];
+						for(var x = 0; x < data.length; x++){
 
-						img.push({
-							"src": data[x].a_url,
-							"href": 'https://www.baidu.com',
-							"info": '图片'
-						})
+							img.push({
+								"src": data[x].a_url,
+								"href": 'https://www.baidu.com',
+								"info": '图片'
+							})
+						}
+						this.imgsArr = this.imgsArr.concat(img);
+						this.group += 25;
+						this.name = res.data.msg[0].acy_name;
+					}else{
+						this.isFirstLoad = false;
 					}
-					this.imgsArr = this.imgsArr.concat(img);
-					this.group++;
 				})
 			}
 		}
