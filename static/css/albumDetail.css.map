@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,QAAQ;EACP,MAAM,EAAE,UAAU;EAClB,KAAK,EAAE,GAAG;EACV,WAAE;IACD,UAAU,EAAC,MAAM",
+"sources": ["../scss/albumDetail.scss"],
+"names": [],
+"file": "albumDetail.css"
+}

@@ -5,7 +5,7 @@
 	</div>
 	<ul>
 		<li v-for="a in ac">
-			<a href="">
+			<router-link :to="{name:'AlbumDetail',params:{id:a.acy_id}}">
 				<div class="imgbox">
 					<img :src="a.acy_url">
 					<span>
@@ -14,7 +14,7 @@
 					</span>
 				</div>
 				<p>{{a.acy_name}}</p>
-			</a>
+			</router-link>
 		</li>
 	</ul>
 	<div class="blank"></div>

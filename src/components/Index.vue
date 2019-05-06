@@ -469,7 +469,6 @@
           </ul>
         </div>
       </div>
-      <button @click="init()">11</button>
       <div class="blank"></div>
   </div>
 </template>
@@ -515,9 +514,6 @@ export default {
   },
   components: {
     vueWaterfallEasy
-  },
-  mounted:function(){
-
   },
   computed:{
     tuijian(){

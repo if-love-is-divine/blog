@@ -8,6 +8,7 @@ import Message from '@/components/Message'
 import Diary from '@/components/Diary'
 import PersonalData from '@/components/PersonalData'
 import Login from '@/components/Login'
+import AlbumDetail from '@/components/AlbumDetail'
 
 Vue.use(Router)
 
@@ -52,6 +53,12 @@ export default new Router({
       path: '/PersonalData',
       name: 'PersonalData',
       component: PersonalData
+    },
+    {
+      path: '/AlbumDetail',
+      name: 'AlbumDetail',
+      component: AlbumDetail,
+      props: true
     }
   ]
 })
