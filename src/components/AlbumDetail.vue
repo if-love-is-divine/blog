@@ -34,6 +34,15 @@
 		components:{
 			vueWaterfallEasy
 		},
+		watch:{
+			//查询参数改变，再次执行数据获取方法
+			'$route'(to,from){
+				this.group = 0;
+				var id = this.$props.id;
+				this.imgsArr = [];
+			 	this.getData();
+			}
+		},
 		methods:{
 			getData(){
 				var group = this.group;

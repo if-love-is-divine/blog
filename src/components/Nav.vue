@@ -32,7 +32,9 @@
                 <router-link to="/Album" active-class="cur">相册</router-link>
                 <ul class="sub">
                   <li v-for="acy in acate" >
-                    <a href="">{{acy.acy_name}}</a>
+                    <router-link :to="{name:'AlbumDetail',params:{id:acy.acy_id}}"> 
+                      {{acy.acy_name}}
+                    </router-link>
                   </li>
                 </ul>
               </li>

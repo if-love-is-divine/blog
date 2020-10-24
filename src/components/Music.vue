@@ -28,7 +28,7 @@
 				<th width="200">歌手</th>
 				<th width="100">播放下载</th>
 			  </tr>
-			  <tr v-for="(ms,index) in music" class="often">
+			  <tr v-for="(ms,index) in like" class="often">
 				<td>{{index+1}}<span class="url">{{ms.ms_url}}</span> <span class="lyric">{{ms.ms_lyric}}</span></td>
 				<td class="ms_name">{{ms.ms_name}} </td>
 				<td>{{ms.ms_singer}}</td>
@@ -249,7 +249,6 @@
 		    	
 	    	</aplayer>
   		</div>
-		
   	</div>
   	
 </template>
@@ -290,18 +289,7 @@ export default {
 	created(){
 		this.$store.dispatch('common/acShow');
 		this.$store.dispatch('music/acMusic');
-		axios.get(`${root}api/music.php`).then((res) =>{
-			let data = res.data.data;
-			for(var x = 0; x < data.length; x++){
-				var obj = {
-					title: data[x].ms_name,
-					artist: data[x].ms_singer,
-					src: data[x].ms_url,
-					lrc: data[x].ms_lyric
-				}
-				this.list.push(obj);
-			}
-		})
+		
 	},
 	methods:{
 		lock(){
@@ -327,16 +315,14 @@ export default {
 					var ms_singer = often[x].children[2].innerHTML;
 					var ms_url = often[x].children[0].children[0].innerHTML;
 					var ms_lyric = often[x].children[0].children[1].innerHTML;
-					console.log(ms_name)
-					console.log(ms_singer)
-					console.log(ms_url)
-					console.log(ms_lyric)
+					var data = 
 					this.ss = {
 						title: ms_name,
 						artist: ms_singer,
 						url: ms_url,
 						lri: ms_lyric
 					}
+					this.list.push(obj);
 					this.isShow = true;
 					setTimeout(function(){
 						
@@ -347,7 +333,7 @@ export default {
 		}
   	},
   	computed:{
-  		music(){
+  		like(){
 			return this.$store.state.music.music;
 		}
   	}

@@ -23,7 +23,17 @@ const actions = {
 	acMusic({commit}){
 		return new Promise((resolve, reject) =>{
 			axios.get(`${root}api/music.php`).then((res) => {
-				commit('muMusic', res.data.data);
+				commit('muMusic', res.data.data);	
+				var data = res.data.data;
+				var like = [];
+				// console.log(data)
+				for(var x = 0; x < data.length; x++){
+					if(data[x].muy_id == 2){
+						like.push(data[x]);
+						console.log(data[x])
+					}
+				}
+				console.log(like);
 				return res.data.data;
 			})
 		})
